@@ -1,0 +1,81 @@
+﻿/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4a90e2;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+main {
+    padding: 2rem;
+}
+
+#productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.producto {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+    .producto:hover {
+        transform: translateY(-5px);
+    }
+
+    .producto img {
+        max-width: 100%;
+        border-radius: 4px;
+        margin-bottom: 1rem;
+    }
+
+    .producto h3 {
+        margin: 0 0 0.5rem;
+        color: #4a90e2;
+    }
+
+    .producto .precio {
+        display: block;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #2b7a0d;
+        margin: 1rem 0;
+    }
+
+    .producto button {
+        background-color: #4a90e2;
+        color: white;
+        border: none;
+        padding: 0.75rem 1.5rem;
+        border-radius: 50px;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background-color 0.3s ease;
+    }
+
+        .producto button:hover {
+            background-color: #3a7bbd;
+        }
+
+footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    background-color: #333;
+    color: white;
+}
