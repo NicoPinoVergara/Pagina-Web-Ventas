@@ -73,6 +73,41 @@ main {
             background-color: #3a7bbd;
         }
 
+@keyframes pulso {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 2px 8px rgba(229,57,53,0.2);
+    }
+    50% {
+        transform: scale(1.08);
+        box-shadow: 0 4px 16px rgba(229,57,53,0.4);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 2px 8px rgba(229,57,53,0.2);
+    }
+}
+
+.btn-pequeno {
+    padding: 0.3rem 0.8rem;
+    font-size: 0.85rem;
+    border-radius: 30px;
+    background-color: #e53935;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    z-index: 1000;
+    animation: pulso 1.2s infinite;
+}
+
+.btn-pequeno:hover {
+    background-color: #b71c1c;
+}
+
 footer {
     text-align: center;
     padding: 1.5rem 0;
